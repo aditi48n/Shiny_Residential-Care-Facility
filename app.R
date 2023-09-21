@@ -1,3 +1,4 @@
+#Import required packages
 library(shiny)
 library(ggplot2)
 library(dplyr)
@@ -6,9 +7,8 @@ library(leaflet)
 library(RColorBrewer)
 
 
-#install.packages("DT")
-
-raw <- read.csv("data/gsr_residential_care_raw.csv")
+#Read in the raw data file and further process data columns
+raw = read.csv("data/gsr_residential_care_raw.csv")
 data = as.data.frame(raw[,-(12:23)])
 options = as.vector(unique(data$CITY))
 
@@ -40,7 +40,7 @@ ui <- fluidPage(
                                   em(
                                       span("Created by", a("Aditi Nagaraj Nallan")),
                                       HTML("&bull;"),
-                                      span("Code available", a(href = "https://github.com/stat545ubc-2021/shiny-aditi48n", "on GitHub"))
+                                      span("Code available", a(href = "https://github.com/aditi48n/Shiny_Residential-Care-Facility", "on GitHub"))
                                     )
                               ),
                   mainPanel(
@@ -67,7 +67,7 @@ server <- function(input, output) {
                                     colors <- brewer.pal(6, "Set2")
                                     color_palette = colorFactor(colors, 
                                                                  levels = c("Community Living", "Mental Health", "Long Term Care", "Acquired Injury", "Hospice", "Residential Care"))
-                                    
+ #Feature 3: Incorporated R leaflet package to make maps more interactive within the application.                                    
                                     output$plot = renderLeaflet({
                                       leaflet(data = filtered()) %>% 
                                         addProviderTiles(providers$OpenStreetMap) %>% 
@@ -83,15 +83,15 @@ server <- function(input, output) {
                                     
   
 #Feature 4: Using the DT package turned a static table into an interactive table for better user experience. 
-                                    output$table <- DT::renderDT({
+                                    output$table = DT::renderDT({
                                       # Check if a point has been selected
-                                      selected_data <- selected_point()
+                                      selected_data = selected_point()
                                       
                                       # If no point is selected, show all entries
                                       if(is.null(selected_data)) {
-                                        data_to_display <- filtered()
+                                        data_to_display = filtered()
                                       } else {
-                                        data_to_display <- selected_data
+                                        data_to_display = selected_data
                                       }
                                       
                                       DT::datatable(data_to_display %>% select(BUSINESS_NAME, STREET_ADDRESS, CITY, POSTAL_CODE, BUSINESS_PHONE))
@@ -119,8 +119,8 @@ server <- function(input, output) {
                                                                       }
                                                                      )
                                     observeEvent(input$plot_marker_click, {
-                                      click_data <- input$plot_marker_click
-                                      clicked_point <- filtered() %>% 
+                                      click_data = input$plot_marker_click
+                                      clicked_point = filtered() %>% 
                                         filter(LONGITUDE == click_data$lng & LATITUDE == click_data$lat)
                                       if(nrow(clicked_point) > 0) {
                                         selected_point(clicked_point)
