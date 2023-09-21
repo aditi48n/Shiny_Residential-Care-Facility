@@ -1,6 +1,6 @@
 # Shiny_Residential-Care-Facility
 
-![Vector Images](https://www.google.com/url?sa=i&url=https%3A%2F%2Fstock.adobe.com%2Fdk%2Fimages%2Felderly-people-care-in-nursing-home-vector-illustration-cartoon-happy-senior-man-woman-characters-do-yoga-sport-exercises-read-books-in-room-interior-disabled-person-in-wheelchair-with-nurse%2F442544230&psig=AOvVaw2tzq43gDuSln9M_Q1GFWkJ&ust=1695368902246000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCMizm7ubu4EDFQAAAAAdAAAAABBe)
+![Vector Images](CF.jpg)
 
 This repository contains a shiny app developed by Aditi Nagaraj Nallan as part of [Assignment B3](https://stat545.stat.ubc.ca/assignments/assignment-b3/) in the University of British Columbia graduate course [STAT 545](https://stat545.stat.ubc.ca/). 
 
