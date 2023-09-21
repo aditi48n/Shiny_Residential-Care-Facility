@@ -1,6 +1,6 @@
-![Vector Images]([http://url/to/img.png](https://github.com/aditi48n/Shiny_Residential-Care-Facility/blob/main/www/Background.png))
-
 # Shiny_Residential-Care-Facility
+
+![Vector Images]([www/Background.png))
 
 This repository contains a shiny app developed by Aditi Nagaraj Nallan as part of [Assignment B3](https://stat545.stat.ubc.ca/assignments/assignment-b3/) in the University of British Columbia graduate course [STAT 545](https://stat545.stat.ubc.ca/). 
 
