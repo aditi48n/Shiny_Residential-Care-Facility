@@ -1,0 +1,36 @@
+body {
+  font-family: 'Times New Roman';
+  font-weight: 500;
+  line-height: 1.1;
+  color: #0a0a0a;
+  background-color: white; /* changing the background to white */
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+/* Adding a logo class for the side image */
+.logo {
+  position: fixed; /* Fixed/sticky position */
+  top: 0; 
+  right: 0;
+  width: 150px; /* Adjust width as necessary */
+  height: 115px; /* Adjust height as necessary */
+  background-image: url("Background.png"); /* Using the image as a background */
+  background-size: contain; /* Adjust the background size to fit within the div */
+}
+
+/* Target the border below the tabs */
+.nav-tabs {
+  border-bottom: none;
+}
+
+/* Also target the active tab to ensure it doesn't have a border at the bottom */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border: none;
+}
+
+
