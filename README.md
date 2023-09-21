@@ -1,4 +1,4 @@
-![alt text]([http://url/to/img.png](https://github.com/aditi48n/Shiny_Residential-Care-Facility/blob/main/www/Background.png))
+![Image]([http://url/to/img.png](https://github.com/aditi48n/Shiny_Residential-Care-Facility/blob/main/www/Background.png))
 
 # Shiny_Residential-Care-Facility
 
