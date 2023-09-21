@@ -64,7 +64,7 @@ server <- function(input, output) {
                                                           CITY %in% input$cityInput)
                                                         })
                                     # Define a color palette
-                                    colors <- brewer.pal(6, "Set2")
+                                    colors = brewer.pal(6, "Set2")
                                     color_palette = colorFactor(colors, 
                                                                  levels = c("Community Living", "Mental Health", "Long Term Care", "Acquired Injury", "Hospice", "Residential Care"))
  #Feature 3: Incorporated R leaflet package to make maps more interactive within the application.                                    
