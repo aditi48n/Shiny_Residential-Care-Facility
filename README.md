@@ -2,13 +2,13 @@
 
 ![Vector Images](RCF.png)
 
-This repository contains a shiny app developed by Aditi Nagaraj Nallan as part of [Assignment B3](https://stat545.stat.ubc.ca/assignments/assignment-b3/) in the University of British Columbia graduate course [STAT 545](https://stat545.stat.ubc.ca/). 
+This repository contains a shiny app developed by Aditi Nagaraj Nallan as part of [Assignment B3](https://stat545.stat.ubc.ca/assignments/assignment-b3/) in the University of British Columbia graduate course [STAT 545](https://stat545.stat.ubc.ca/). Note that the code has been modified from the original submission to incorporate an interactive map and other aesthetic features. 
 
 For this assignment, I have chosen option B which is- develop your own app. Below, I have provided a link to access the app along with some information about the app. 
 
 The app is currently deployed on [shinyapps.io](https://www.shinyapps.io/) and can be accessed using this [link](https://aditi-nagaraj.shinyapps.io/Shiny-RCF/).
 
-In a nutshell, this app is designed to allow users access to information currently displayed on the Residential Care Programs Map. At the moment, this app only performs the basic functions of filtering information based on two citerias, displaying and downloading filtered data. Further developments to the app will include addition of a search box in the map for users to directly search for a facility by name, more detailed pop ups, additional data layers such as public transport routes among other aesthetic features. 
+In a nutshell, this app is designed to allow users access to information currently displayed on the Residential Care Programs Map. At the moment, this app only performs the basic functions of filtering information based on two citerias, displaying and downloading filtered data. Further developments to the app will include addition of a search box in the interactive map for users to directly search for a facility by name, more detailed pop ups, additional data layers such as public transport routes among other features. 
 
 
 ## Motivation
